@@ -15,7 +15,11 @@ public class BrowserSim2 extends javax.swing.JFrame {
     private BrowserSearch browserSearch;
     private String[] visitedPages;
      private int visitedCount;
-
+public BrowserSim2() {
+        initComponents();
+        navStack = new BrowserHistoryStack(MAX_PAGES);
+        browserSearch = new BrowserSearch();
+        visitedPages = new String[MAX_PAGES];
     
 
     @SuppressWarnings("unchecked")
