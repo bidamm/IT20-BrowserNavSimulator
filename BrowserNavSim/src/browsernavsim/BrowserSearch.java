@@ -9,6 +9,7 @@ package browsernavsim;
  * @author USER
  */
 public class BrowserSearch {
+
     public int linearSearch(String[] pages, int count, String keyword) {
         if (pages == null || keyword == null) {
             return -1;
@@ -18,4 +19,11 @@ public class BrowserSearch {
         if (key.length() == 0) {
             return -1;
         }
-
+        for (int i = 0; i < count; i++) {
+            if (pages[i] != null && containsIgnoreCase(pages[i], key)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
