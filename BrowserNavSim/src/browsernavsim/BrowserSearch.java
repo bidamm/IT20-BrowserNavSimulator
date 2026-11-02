@@ -9,5 +9,13 @@ package browsernavsim;
  * @author USER
  */
 public class BrowserSearch {
-    
-}
+    public int linearSearch(String[] pages, int count, String keyword) {
+        if (pages == null || keyword == null) {
+            return -1;
+        }
+
+        String key = keyword.trim();
+        if (key.length() == 0) {
+            return -1;
+        }
+
