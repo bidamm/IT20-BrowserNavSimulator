@@ -20,6 +20,7 @@ public BrowserSim2() {
         navStack = new BrowserHistoryStack(MAX_PAGES);
         browserSearch = new BrowserSearch();
         visitedPages = new String[MAX_PAGES];
+        visitedCount = 0;
     
 
     @SuppressWarnings("unchecked")
