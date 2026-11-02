@@ -14,6 +14,8 @@ public class BrowserSim2 extends javax.swing.JFrame {
     private static final int MAX_PAGES = 100;
     private BrowserSearch browserSearch;
     private String[] visitedPages;
+     private int visitedCount;
+
     
 
     @SuppressWarnings("unchecked")
