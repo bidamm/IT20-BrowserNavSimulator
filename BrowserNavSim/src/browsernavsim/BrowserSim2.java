@@ -12,6 +12,8 @@ public class BrowserSim2 extends javax.swing.JFrame {
      private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(BrowserSim2.class.getName());
 
     private static final int MAX_PAGES = 100;
+    private BrowserSearch browserSearch;
+    
     
 
     @SuppressWarnings("unchecked")
