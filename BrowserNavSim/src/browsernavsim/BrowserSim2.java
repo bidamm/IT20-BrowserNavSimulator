@@ -161,7 +161,17 @@ public BrowserSim2() {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-  
+   private void visitPage() {
+        String url = txtURL.getText().trim();
+
+        if (url.length() == 0) {
+            javax.swing.JOptionPane.showMessageDialog(
+                    this,
+                    "Please enter a URL.",
+                    "Empty URL",
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+            return;
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
