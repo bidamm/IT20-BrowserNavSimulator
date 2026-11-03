@@ -5,11 +5,6 @@ package browsersim;
  * Does not use Java Collections or built-in array search methods.
  */
 public class BrowserSearch {
-
-    /**
-     * Searches pages[0 .. count-1] for a keyword.
-     * Returns the first matching index (0-based), or -1 if not found.
-     */
     public int linearSearch(String[] pages, int count, String keyword) {
         if (pages == null || keyword == null) {
             return -1;

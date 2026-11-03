@@ -8,9 +8,9 @@ package browsersim;
  *
  * @author USER
  */
-public class BrowserSim2 extends javax.swing.JFrame {
+public class BrowserSim21 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(BrowserSim2.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(BrowserSim21.class.getName());
 
     private static final int MAX_PAGES = 100;
     private BrowserHistoryStack navStack;
@@ -21,7 +21,7 @@ public class BrowserSim2 extends javax.swing.JFrame {
     /**
      * Creates new form BrowserSim2
      */
-    public BrowserSim2() {
+    public BrowserSim21() {
         initComponents();
         navStack = new BrowserHistoryStack(MAX_PAGES);
         browserSearch = new BrowserSearch();
@@ -315,7 +315,7 @@ public class BrowserSim2 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new BrowserSim2().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new BrowserSim21().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
